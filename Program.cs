@@ -4,6 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+
+        Console.Clear();
+
+        GameEngine Game = new GameEngine();
+
+        Game.Start();
+        Game.Play();
+
+        
+
+
     }
 }
