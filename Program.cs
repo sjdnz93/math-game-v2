@@ -12,8 +12,5 @@ class Program
         Game.Start();
         Game.Play();
 
-        
-
-
     }
 }

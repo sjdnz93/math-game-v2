@@ -28,10 +28,14 @@ public class GameEngine
 
       string? input = Console.ReadLine();
 
-      bool check = Helpers.CheckInputIsValid(input!, this);
+      bool check = Helpers.CheckGameSelectionIsValid(input!, this);
 
       if (check)
       {
+        if (userChoice == 5) {
+          Console.WriteLine("Goodbye."); 
+          Environment.Exit(0);
+        }
         inputIsValid = true;
       }
     }
@@ -39,8 +43,22 @@ public class GameEngine
 
   public void Play()
   {
-    Console.WriteLine("Play");
-    Console.WriteLine(userChoice);
+
+    switch (userChoice) {
+      case 1:
+        AdditionGameLogic.Launch();
+        break;
+      case 2: 
+        Console.WriteLine("Subtraction Game");
+        break;
+      case 3:
+        Console.WriteLine("Multiplication Game");
+        break;
+      case 4:
+        Console.WriteLine("Division Game");
+        break;       
+    }
+
   }
 
 
