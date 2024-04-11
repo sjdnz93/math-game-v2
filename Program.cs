@@ -2,15 +2,25 @@
 
 class Program
 {
-    static void Main(string[] args)
+
+
+  static void Main(string[] args)
+  {
+
+    Console.Clear();
+
+    GameEngine Game = new GameEngine();
+    Status Status = new Status(true);
+
+    var gameActive = Status.GameStatus;
+
+    while (gameActive)
     {
-
-        Console.Clear();
-
-        GameEngine Game = new GameEngine();
-
-        Game.Start();
-        Game.Play();
-
+      Game.Start();
+      Game.Play();
     }
+
+
+
+  }
 }
