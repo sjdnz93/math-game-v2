@@ -5,8 +5,7 @@ public static class Helpers
 
   public static bool CheckGameSelectionIsValid(string userInput)
   {
-
-    bool isNumeric = int.TryParse(userInput, out int result);
+    bool isNumeric = int.TryParse(userInput, out _);
 
     if (isNumeric)
     {
@@ -20,9 +19,9 @@ public static class Helpers
 
   }
 
-  public static bool CheckAnswerIsValid(string userInput)
+  public static bool CheckAnswerIsNumeric(string userInput)
   {
-    bool isNumeric = int.TryParse(userInput, out int result);
+    bool isNumeric = int.TryParse(userInput, out _);
 
     if (isNumeric)
     {
@@ -30,12 +29,34 @@ public static class Helpers
     }
     else
     {
-      Console.WriteLine("You must enter a number between 1 and 5");
+      Console.WriteLine("Your answer must be a number!");
       return false;
     }
-
-
   }
 
+  public static void ValidateUserAnswer(bool isValid, int answer)
+  {
+    while (!isValid)
+    {
+      string? userAnswer = Console.ReadLine();
+
+      bool check = CheckAnswerIsNumeric(userAnswer!);
+
+      if (check)
+      {
+        isValid = true;
+        int userResult = Convert.ToInt32(userAnswer);
+        if (userResult == answer)
+        {
+          Status.currentScore++;
+          Status.questionsAsked++;
+        }
+        else
+        {
+          Status.questionsAsked++;
+        }
+      }
+    }
+  }
 
 }

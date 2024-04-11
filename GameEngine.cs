@@ -70,7 +70,6 @@ public static class GameEngine
 
     while (!inputIsValid)
     {
-
       string? input = Console.ReadLine();
 
       if (input == "y")
