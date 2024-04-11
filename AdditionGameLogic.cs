@@ -1,11 +1,12 @@
 using System.Data.Common;
+using System.Net;
 
-namespace math_game_v2;
+namespace MathGame;
 
 public class AdditionGameLogic
 {
-  static int currentScore = 0;
-  static int questionsAsked = 0;
+  private static int currentScore = 0;
+  private static int questionsAsked = 0;
 
   public static void Launch()
   {
@@ -61,13 +62,14 @@ public class AdditionGameLogic
       questionsAsked = 0;
       currentScore = 0;
       Console.Clear();
-      AdditionGameLogic.Launch();
+      Launch();
     }
     else if (input == "n")
     {
+      questionsAsked = 0;
+      currentScore = 0;
       Console.Clear();
-      GameEngine newGame = new GameEngine();
-      newGame.Start();
+      //GameEngine.Start();
     } else {
       Console.WriteLine("Please enter y or n");
     }

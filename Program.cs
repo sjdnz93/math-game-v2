@@ -1,4 +1,6 @@
-﻿namespace math_game_v2;
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace MathGame;
 
 class Program
 {
@@ -9,18 +11,24 @@ class Program
 
     Console.Clear();
 
-    GameEngine Game = new GameEngine();
     Status Status = new Status(true);
 
     var gameActive = Status.GameStatus;
 
     while (gameActive)
     {
-      Game.Start();
-      Game.Play();
+      GameEngine.Start();
+      var choice = GameEngine.GetUserChoice();
+
+      if (choice == 5) {
+        gameActive = false;
+      }
+
+      GameEngine.Play(choice);
     }
 
-
+    Console.WriteLine("Goodbye!");
+    Environment.Exit(0);
 
   }
 }

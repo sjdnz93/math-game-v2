@@ -1,15 +1,15 @@
-namespace math_game_v2;
+using System.Net.NetworkInformation;
 
-public class GameEngine
+namespace MathGame;
+
+public static class GameEngine
 {
 
-  public int userChoice;
+  public static int userChoice;
 
-  public GameEngine()
-  {
-  }
 
-  public void Start()
+
+  public static void Start()
   {
     Console.WriteLine(@"Hello and welcome to the math game. Please select a game from the options below:
 
@@ -21,34 +21,40 @@ public class GameEngine
 
     ");
 
+  }
+
+  public static int GetUserChoice()
+  {
+
     bool inputIsValid = false;
+    string choice = "";
 
     while (!inputIsValid)
     {
 
       string? input = Console.ReadLine();
 
-      bool check = Helpers.CheckGameSelectionIsValid(input!, this);
+      bool check = Helpers.CheckGameSelectionIsValid(input!);
 
       if (check)
       {
-        if (userChoice == 5) {
-          Console.WriteLine("Goodbye."); 
-          Environment.Exit(0);
-        }
         inputIsValid = true;
+        choice = input!;
       }
     }
+
+    return Convert.ToInt32(choice);
   }
 
-  public void Play()
+  public static void Play(int userChoice)
   {
 
-    switch (userChoice) {
+    switch (userChoice)
+    {
       case 1:
         AdditionGameLogic.Launch();
         break;
-      case 2: 
+      case 2:
         Console.WriteLine("Subtraction Game");
         break;
       case 3:
@@ -56,7 +62,7 @@ public class GameEngine
         break;
       case 4:
         Console.WriteLine("Division Game");
-        break;       
+        break;
     }
 
   }

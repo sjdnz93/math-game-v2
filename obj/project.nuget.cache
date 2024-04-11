@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8qilesQOYgRFjbOuivBsZJm5U00sxcHxtt1jtLxwj5FsZtQpnNgN2d5o5/OXM935WGV5EtyrqDLBpmpmg0qqpA==",
+  "dgSpecHash": "gDHKI8YW5CvertYf/96kX1DnKxXcA4SVsOwYJ/OUaDRjfDp1kQK2JJlZvk5yfPuDMQTYt/ZqKXNzj8A3aDs79g==",
   "success": true,
-  "projectFilePath": "/Users/simondavis/development/PROJECTS/math-game-v2/math-game-v2.csproj",
+  "projectFilePath": "/Users/simondavis/development/PROJECTS/math-game-v2/MathGame.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

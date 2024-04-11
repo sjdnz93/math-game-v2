@@ -1,4 +1,4 @@
-﻿namespace math_game_v2;
+﻿namespace MathGame;
 
 public class Status
 {

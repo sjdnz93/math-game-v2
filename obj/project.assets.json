@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/simondavis/development/PROJECTS/math-game-v2/math-game-v2.csproj",
-      "projectName": "math-game-v2",
-      "projectPath": "/Users/simondavis/development/PROJECTS/math-game-v2/math-game-v2.csproj",
+      "projectUniqueName": "/Users/simondavis/development/PROJECTS/math-game-v2/MathGame.csproj",
+      "projectName": "MathGame",
+      "projectPath": "/Users/simondavis/development/PROJECTS/math-game-v2/MathGame.csproj",
       "packagesPath": "/Users/simondavis/.nuget/packages/",
       "outputPath": "/Users/simondavis/development/PROJECTS/math-game-v2/obj/",
       "projectStyle": "PackageReference",

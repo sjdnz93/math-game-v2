@@ -1,16 +1,15 @@
-namespace math_game_v2;
+namespace MathGame;
 
 public static class Helpers
 {
 
-  public static bool CheckGameSelectionIsValid(string userInput, GameEngine game)
+  public static bool CheckGameSelectionIsValid(string userInput)
   {
 
     bool isNumeric = int.TryParse(userInput, out int result);
 
     if (isNumeric)
     {
-      game.userChoice = result;
       return true;
     }
     else

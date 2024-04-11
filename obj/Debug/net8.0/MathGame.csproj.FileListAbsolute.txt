@@ -1,0 +1,15 @@
+/Users/simondavis/development/PROJECTS/math-game-v2/bin/Debug/net8.0/MathGame
+/Users/simondavis/development/PROJECTS/math-game-v2/bin/Debug/net8.0/MathGame.deps.json
+/Users/simondavis/development/PROJECTS/math-game-v2/bin/Debug/net8.0/MathGame.runtimeconfig.json
+/Users/simondavis/development/PROJECTS/math-game-v2/bin/Debug/net8.0/MathGame.dll
+/Users/simondavis/development/PROJECTS/math-game-v2/bin/Debug/net8.0/MathGame.pdb
+/Users/simondavis/development/PROJECTS/math-game-v2/obj/Debug/net8.0/MathGame.GeneratedMSBuildEditorConfig.editorconfig
+/Users/simondavis/development/PROJECTS/math-game-v2/obj/Debug/net8.0/MathGame.AssemblyInfoInputs.cache
+/Users/simondavis/development/PROJECTS/math-game-v2/obj/Debug/net8.0/MathGame.AssemblyInfo.cs
+/Users/simondavis/development/PROJECTS/math-game-v2/obj/Debug/net8.0/MathGame.csproj.CoreCompileInputs.cache
+/Users/simondavis/development/PROJECTS/math-game-v2/obj/Debug/net8.0/MathGame.sourcelink.json
+/Users/simondavis/development/PROJECTS/math-game-v2/obj/Debug/net8.0/MathGame.dll
+/Users/simondavis/development/PROJECTS/math-game-v2/obj/Debug/net8.0/refint/MathGame.dll
+/Users/simondavis/development/PROJECTS/math-game-v2/obj/Debug/net8.0/MathGame.pdb
+/Users/simondavis/development/PROJECTS/math-game-v2/obj/Debug/net8.0/MathGame.genruntimeconfig.cache
+/Users/simondavis/development/PROJECTS/math-game-v2/obj/Debug/net8.0/ref/MathGame.dll
