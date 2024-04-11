@@ -20,8 +20,9 @@ public class AdditionGameLogic
       int secondNumber = rnd.Next(0, 11);
       int result = firstNumber + secondNumber;
 
-      Console.WriteLine($"Your score is {Status.currentScore}");
-      Console.WriteLine($"What is {firstNumber} + {secondNumber}?");
+      Console.WriteLine($"Your score is {Status.currentScore}\n");
+      Console.WriteLine($"Question {Status.questionsAsked + 1} of 10:");
+      Console.WriteLine($"{firstNumber} + {secondNumber} = ?");
 
       bool inputIsValid = false;
 
@@ -42,7 +43,7 @@ public class AdditionGameLogic
           }
           else
           {
-            Status.questionsAsked++;
+            Status.questionsAsked++; // TODO sort out dodgy invalid answer input handling
           }
         }
 

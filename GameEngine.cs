@@ -62,6 +62,7 @@ public static class GameEngine
 
   public static void EndGame()
   {
+    Console.Clear();
     Console.WriteLine($"Game over! You answered {Status.currentScore} out of 10 questions correctly");
     Console.WriteLine("Would you like to play again? (y/n)");
 
