@@ -5,13 +5,11 @@ namespace MathGame;
 
 public class AdditionGameLogic
 {
-  private static int currentScore = 0;
-  private static int questionsAsked = 0;
 
   public static void Launch()
   {
 
-    while (questionsAsked < 10)
+    while (Status.questionsAsked < 10)
     {
       Console.Clear();
       Console.WriteLine("ADDITION GAME!");
@@ -22,7 +20,7 @@ public class AdditionGameLogic
       int secondNumber = rnd.Next(0, 11);
       int result = firstNumber + secondNumber;
 
-      Console.WriteLine($"Your score is {currentScore}");
+      Console.WriteLine($"Your score is {Status.currentScore}");
       Console.WriteLine($"What is {firstNumber} + {secondNumber}?");
 
       bool inputIsValid = false;
@@ -39,12 +37,12 @@ public class AdditionGameLogic
           int userResult = Convert.ToInt32(userAnswer);
           if (userResult == result)
           {
-            currentScore++;
-            questionsAsked++;
+            Status.currentScore++;
+            Status.questionsAsked++;
           }
           else
           {
-            questionsAsked++;
+            Status.questionsAsked++;
           }
         }
 
@@ -52,28 +50,7 @@ public class AdditionGameLogic
 
     }
 
-    Console.WriteLine($"Game over! You answered {currentScore} out of 10 questions correctly");
-    Console.WriteLine("Would you like to play again? (y/n)");
-
-    string? input = Console.ReadLine();
-
-    if (input == "y")
-    {
-      questionsAsked = 0;
-      currentScore = 0;
-      Console.Clear();
-      Launch();
-    }
-    else if (input == "n")
-    {
-      questionsAsked = 0;
-      currentScore = 0;
-      Console.Clear();
-      //GameEngine.Start();
-    } else {
-      Console.WriteLine("Please enter y or n");
-    }
+    GameEngine.EndGame();
 
   }
-
 }

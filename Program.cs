@@ -4,21 +4,19 @@ namespace MathGame;
 
 class Program
 {
-
-
   static void Main(string[] args)
   {
-
-    Console.Clear();
 
     Status Status = new Status(true);
 
     var gameActive = Status.GameStatus;
 
+    GameEngine.Start();
+
     while (gameActive)
     {
-      GameEngine.Start();
-      var choice = GameEngine.GetUserChoice();
+      
+      var choice = GameEngine.GetUserGameChoice();
 
       if (choice == 5) {
         gameActive = false;
