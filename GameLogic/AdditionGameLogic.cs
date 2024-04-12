@@ -30,6 +30,7 @@ public class AdditionGameLogic
 
       }
 
+    Player.UpdateAdditionScores(Status.currentScore);
     GameEngine.EndGame();
 
   }

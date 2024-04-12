@@ -24,7 +24,7 @@ public class MultiplicationGameLogic
       Helpers.ValidateUserAnswer(inputIsValid, correctAnswer);
 
     }
-
+    Player.UpdateMultiplicationScores(Status.currentScore);
     GameEngine.EndGame();
 
   }

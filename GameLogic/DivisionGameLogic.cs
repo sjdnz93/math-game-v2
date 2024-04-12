@@ -30,7 +30,7 @@ public class DivisionGameLogic
       Helpers.ValidateUserAnswer(inputIsValid, (int)correctAnswer);
 
     }
-
+    Player.UpdateDivisionScores(Status.currentScore);
     GameEngine.EndGame();
 
   }

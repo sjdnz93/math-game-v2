@@ -14,7 +14,8 @@ public static class GameEngine
     2. Subtraction
     3. Multiplication
     4. Division
-    5. Quit
+    5. Your game scores
+    6. Quit
 
     ");
   }

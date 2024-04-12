@@ -25,7 +25,7 @@ public class SubtractionGameLogic
       Helpers.ValidateUserAnswer(inputIsValid, correctAnswer);
 
     }
-
+    Player.UpdateSubtractionScores(Status.currentScore);
     GameEngine.EndGame();
 
   }
