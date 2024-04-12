@@ -9,7 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="GameEngine/" />
     <Folder Include="GameLogic/" />
+    <Folder Include="GameStatus/" />
+    <Folder Include="Helpers/" />
   </ItemGroup>
 
 </Project>
