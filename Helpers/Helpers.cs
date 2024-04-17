@@ -9,7 +9,13 @@ public static class Helpers
 
     if (isNumeric)
     {
-      return true;
+      int number = Convert.ToInt32(userInput);
+      if (number >= 1 && number <= 5){
+        return true;
+      } else {
+        Console.WriteLine("You must enter a number between 1 and 5");
+        return false;
+      }  
     }
     else
     {
