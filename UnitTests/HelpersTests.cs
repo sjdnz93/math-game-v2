@@ -3,7 +3,6 @@ namespace UnitTests;
 
 public class HelpersTests
 {
-
   [TestFixture]
   public class CheckGameSelectionIsValid
   {
@@ -36,7 +35,7 @@ public class HelpersTests
     public void InvalidInputNumber_ReturnsFalse()
     {
       // Arrange 
-      string input = "6";
+      string input = "7";
 
       // Act 
       bool result = Helpers.CheckGameSelectionIsValid(input);
@@ -45,6 +44,4 @@ public class HelpersTests
       Assert.That(!result);
     }
   }
-
-
 }
