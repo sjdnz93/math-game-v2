@@ -21,26 +21,16 @@ public class HelpersTests
     [Test]
     public void InvalidInputLetter_ReturnsFalse()
     {
-      // Arrange 
       string input = "a";
-
-      // Act 
       bool result = Helpers.CheckGameSelectionIsValid(input);
-
-      // Assert 
       Assert.That(!result);
     }
 
     [Test]
     public void InvalidInputNumber_ReturnsFalse()
     {
-      // Arrange 
       string input = "7";
-
-      // Act 
       bool result = Helpers.CheckGameSelectionIsValid(input);
-
-      // Assert 
       Assert.That(!result);
     }
   }
