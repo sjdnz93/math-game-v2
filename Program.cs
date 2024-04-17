@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace MathGame;
+﻿namespace MathGame;
 
 class Program
 {
